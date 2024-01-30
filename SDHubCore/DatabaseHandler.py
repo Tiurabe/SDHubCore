@@ -4,7 +4,7 @@ import requests
 
 
 class Info(BaseModel):
-    source: str
+    source: str | None = ""
     version: str | None = ""
     last_update: str | None = ""
     comment: str | None = ""
