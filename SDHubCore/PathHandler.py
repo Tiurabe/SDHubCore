@@ -20,6 +20,7 @@ paths: list[Dir] = [
 ]
 
 paths.extend([
+    Dir(name="model", path=os.path.join(paths[1].path, "models", "Stable-diffusion")),
     Dir(name="lora", path=os.path.join(paths[1].path, "models", "Lora")),
     Dir(name="vae", path=os.path.join(paths[1].path, "models", "VAE")),
     Dir(name="embedding", path=os.path.join(paths[1].path, "embeddings")),
