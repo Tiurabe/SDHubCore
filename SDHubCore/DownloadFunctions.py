@@ -7,21 +7,8 @@ import re
 from colored import cprint
 
 
+# Attempts to extract the filename from a URL. Also tries to handle possible errors and handling potential edge cases.
 def get_filename(url, user_header=None) -> str:
-    """
-    Attempts to extract the filename from a URL. Also tries to handle possible errors and handling potential edge cases.
-
-    Args:
-        url (str): The target URL.
-        user_header (str, optional): Optional user header for authentication. The default value is None.
-
-    Returns:
-        str: The extracted filename, or raises an exception if not found.
-
-    Raises:
-        requests.HTTPError: If the request fails with an HTTP error.
-        ValueError: If the filename cannot be extracted from the URL or headers.
-    """
 
     headers = {"Authorization": user_header} if user_header else {}  # Concise header assignment
 
