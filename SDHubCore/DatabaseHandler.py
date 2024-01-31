@@ -13,6 +13,7 @@ class Info(BaseModel):
 class Model(BaseModel):
     name: str
     type: str
+    download_url: str
     format: str = "safetensors"
     info: Info
 
