@@ -1,6 +1,6 @@
 import os
 import subprocess
-from PathHandler import check_path
+from SDHubCore.PathHandler import check_path
 from urllib.parse import urlparse, unquote
 import requests
 import re
