@@ -47,7 +47,7 @@ def check_path(path: str):
 
 # Fetches a path based on the specified name parameter.
 # Usage: f(paths, "Root")
-def f(paths_list: list = None, name_parameter: str = None):
+def f(name_parameter: str = None, paths_list: list = None):
     if not paths_list:
         if not name_parameter:
             return None
