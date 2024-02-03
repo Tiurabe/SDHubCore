@@ -32,7 +32,7 @@ def check_path(path: str):
     if path is None or path is False:
         return False
     if not os.path.exists(path):
-        if not os.path.exists(f(paths, "webui")):
+        if not os.path.exists(f(name_parameter="webui", paths_list=paths)):
             print("Unable to locate your sd webui installation, aborting the download.")
             return False
         else:
