@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='SDHubCore',
-    version='0.0.5',
+    version='0.0.6',
     author='Tiurabe',
     author_email='tiurabe@gmail.com',
     description='Several functions and tools used by SDHub',
